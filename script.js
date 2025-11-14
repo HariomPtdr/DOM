@@ -1,20 +1,19 @@
-var h1 = document.querySelector('h1')
-h1.style.color = 'black';
+const buttons = document.querySelectorAll(".btn");
+const body = document.body;
 
-var inc = document.getElementById('inc');
-var des = document.getElementById('des');
-var btn = document.querySelectorAll('button');
-var count = 0;
-var h2 = document.querySelector('h2');
+buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+        
+        buttons.forEach(b => b.classList.remove("active"));
 
+        btn.classList.add("active");
 
-inc.addEventListener('click', function(){
-    count++;
-    h2.innerHTML = count;
+        body.style.background = btn.id;
+
+        if (btn.id === "yellow") {
+            body.style.color = "black";
+        } else {
+            body.style.color = "white";
+        }
+    });
 });
-
-des.addEventListener('click', function(){
-    count--;
-    h2.innerHTML = count;
-});
-

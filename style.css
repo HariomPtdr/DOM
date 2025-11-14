@@ -1,59 +1,52 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-html, body{
-    height: 100%;
-    background-color: rgb(160, 176, 138);
-
-}
-#box{
+body {
+    height: 100vh;
     display: flex;
-    flex-direction: row;
-    align-items:center;
-    justify-content: space-evenly;
-    margin-top: 15%;
-    
-}
-h1{
-    text-align: center;
-    color: white;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-size: 50px;
-}
- #h{
-    text-align: center;
-    color: rgb(36, 92, 69);
-    background-color: rgb(175, 177, 92);
-}
-#h{
-    border : solid rgba(18, 138, 88, 0.506)  6px;
-    width: 200px;
-    height: 100px;   
-    padding : 20px; 
-    margin: auto; 
-    margin-top: 10%;
-    font-size: 50px;
-    border-radius: 20px;
-}
-
-button{
-    width: 150px;
-    height: 50px;
-    font-size: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: red;
-    align-items: center;
     justify-content: center;
-    border: 0;
-    color:rgb(36, 92, 69)
+    align-items: center;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    transition: background-color 0.5s ease;
 }
-button:hover {
-    background-color: rgb(239, 240, 239);
-    color: red;
-    transition: background-color 300ms ease 200ms, color 300ms ease
 
+.box {
+    background: rgba(40, 37, 37, 0.312);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.37);
+    border-radius: 20px;
+    padding: 40px 60px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+h1 {
+    color: white;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.btn-box {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(203, 178, 178, 0.8);
+}
+
+.active {
+    background: black;
+    transform: scale(1.1);
+    border: 2px solid white;
 }
