@@ -3,12 +3,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    background: linear-gradient(135deg, #a25bbe, #2e8d44);
     transition: background-color 0.5s ease;
 }
 
 .box {
-    background: rgba(40, 37, 37, 0.312);
+    background: rgba(86, 57, 57, 0.312);
     box-shadow: 0 8px 32px rgba(0,0,0,0.37);
     border-radius: 20px;
     padding: 40px 60px;
