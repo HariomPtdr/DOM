@@ -1,0 +1,109 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ipl', sans-serif;
+}
+
+@font-face {
+    font-family: 'ipl';
+    src: url('./poppins.black.ttf') format('truetype');
+    font-weight: normal; 
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px; 
+    background-color: #a891a1; 
+    background-image: none; 
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+#h {
+    color: #FFD700;
+    font-size: clamp(1.5em, 5vw, 3em); 
+    text-shadow: 0 0 10px rgba(5, 5, 5, 0.845); 
+    font-weight: 900; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#game-main {
+    height: 70vh; 
+    width: 80%; 
+    max-width: 500px;
+    background: rgba(237, 229, 229, 0.057);
+    border: 1px solid rgba(226, 4, 4, 0.933); 
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+    flex-direction: column;
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    border-left: 5px solid #bbc3a9; 
+}
+
+h2, h1 {
+    color:  #141514; 
+    background-color:  rgba(50, 87, 71, 0.646);
+    border-radius: 8px;
+    padding: 10px 18px; 
+    font-family: 'ipl', sans-serif;
+    text-align: center;
+    margin: 10px 0; 
+    text-shadow: 0 0 5px rgba(76, 34, 34, 0.9); 
+    font-weight: bold;
+    width: 90%; 
+}
+
+#h1 {
+    font-size: clamp(2em, 8vw, 4em); 
+    padding: 20px 25px;
+    border: 3px solid currentColor; 
+}
+
+#h2, #h3, #h4 {
+    font-size: clamp(1em, 3.5vw, 1.6em);
+}
+
+
+
+button {
+    background: linear-gradient(90deg, #7eb380, #905339); 
+    color: #111; 
+    padding: 16px 32px; 
+    border-radius: 50px; 
+    font-size: 1.4em; 
+    font-weight: 900;
+    border: none; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4); 
+    letter-spacing: 0.5px; 
+}
+
+button:hover {
+    transform: scale(1.03) translateY(-2px);
+    background: linear-gradient(90deg, #e30a06, #0678d5 );
+    color: #FFB000;
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.8); 
+}
+
+button:active {
+    transform: scale(0.98); 
+}
