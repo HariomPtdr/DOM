@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Shorts - Only Reel Scrolls</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @layer utilities {
+            .no-scrollbar::-webkit-scrollbar {
+                display: none;
+            }
+            .no-scrollbar {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <main class="bg-black h-screen w-screen  p-5 ">
+        <section class="h-[90vh] aspect-[9/16] bg-black rounded-xl m-auto ">
+            <div class=" h-full w-full overflow-y-scroll snap-mandatory snap-y no-scrollbar scroll-smooth ">
+                <div class="h-full w-full relative overflow-hidden rounded-xl mb-5 snap-start snap-always">
+                    <img src="https://images.unsplash.com/photo-1763063556535-5f6174a5c5d4?auto=format"class="h-full w-full object-cover">
+                    <div class=" absolute flex flex-col items-center justify-center text-4xl gap-5 text-black right-4 bottom-10 ">
+                        <button><i class="ri-thumb-up-line text-lg"></i><h1 class="font-light text-sm">20k</h1></button>
+                        <button><i class="ri-thumb-down-line text-lg"></i></button>
+                        <button><i class="ri-chat-3-line text-lg"></i><h1 class="font-light text-sm">1k</h1></button>
+                        <i class="ri-share-forward-line text-lg"></i><h1 class="font-light text-sm">2k</h1></button>
+                        <div class="h-10 w-10 rounded-full overflow-hidden border border-white">
+                            <img src="https://images.unsplash.com/photo-1763063556535-5f6174a5c5d4?auto=format" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                    <div class="flex flex-col text-white absolute bottom-0 left-0 right-0 pb-8 p-4 bg-gradient-to-t from-black to-transparent">
+                        <h1 class="text-lg font-semibold">Hariom Patidar</h1><p class="text-sm font-light">#short #beautiful_image #trending</p>
+                    </div>
+                </div>
+                <div class="h-full w-full relative overflow-hidden rounded-xl mb-5 snap-start snap-always">
+                    <img src="https://images.unsplash.com/photo-1763063556535-5f6174a5c5d4?auto=format"class="h-full w-full object-cover">
+                    <div class=" absolute flex flex-col items-center justify-center text-4xl gap-5 text-black right-4 bottom-10 ">
+                        <button><i class="ri-thumb-up-line text-lg"></i><h1 class="font-light text-sm">20k</h1></button>
+                        <button><i class="ri-thumb-down-line text-lg"></i></button>
+                        <button><i class="ri-chat-3-line text-lg"></i><h1 class="font-light text-sm">1k</h1></button>
+                        <i class="ri-share-forward-line text-lg"></i><h1 class="font-light text-sm">2k</h1></button>
+                        <div class="h-10 w-10 rounded-full overflow-hidden border border-white">
+                            <img src="https://images.unsplash.com/photo-1763063556535-5f6174a5c5d4?auto=format" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                    <div class="flex flex-col text-white absolute bottom-0 left-0 right-0 pb-8 p-4 bg-gradient-to-t from-black to-transparent">
+                        <h1 class="text-lg font-semibold">Hariom Patidar</h1><p class="text-sm font-light">#short #beautiful_image #trending</p>
+                    </div>
+                </div> 
+            </div>
+        </section>
+    </main>
+</body>
+</html>
